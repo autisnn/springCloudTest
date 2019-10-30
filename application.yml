@@ -1,1 +1,9 @@
-test
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/autisnn/springCloudTest.git
+ 
+server:
+  port: 8052
