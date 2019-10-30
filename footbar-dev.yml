@@ -1,1 +1,7 @@
-﻿profile: profile-dev
+﻿#开发分支
+profile:  profile-dev
+
+driverClassName: oracle.jdbc.driver.OracleDriver
+url: jdbc:oracle:thin:@127.0.0.1:1521/XE
+username: tiancao222
+password: tiancao
