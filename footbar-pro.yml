@@ -1,7 +1,2 @@
 ﻿#产品分支
 profile:  profile-pro
-
-driverClassName: oracle.jdbc.driver.OracleDriver
-url: jdbc:oracle:thin:@127.0.0.1:1521/XE
-username: tiancao222
-password: tiancao
