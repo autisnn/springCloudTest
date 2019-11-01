@@ -1,6 +1,6 @@
 #服务端口号
-server:
-  port: 8088
+# server:
+#   port: 8053
 
 #spring配置
 debug: true
