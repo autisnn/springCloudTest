@@ -3,24 +3,16 @@
 # server:
 #   port: 8053
 
-#spring配置
-debug: true
-spring:
-  #数据库配置
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    username: root
-    password: root
-    url: jdbc:mysql://localhost:3306/mybatiestest?serverTimezone=GMT
-    type: com.alibaba.druid.pool.DruidDataSource
-  #开发工具配置
-  devtools:
-    restart:
-      enabled: true  #设置开启热部署
-    freemarker:
-      cache: false    #页面不加载缓存，修改即时生效
+server:
+ port: 8080
 
-#mybatis配置
+spring:
+ datasource:
+   name: test
+   url: jdbc:mysql://127.0.0.1:3306/mybatiestest
+   username: root
+   password: root
+   driver-class-name: com.mysql.jdbc.Driver
 mybatis:
-  mapper-locations: classpath:*Mapper.xml
-  config-location: classpath:mybatis-config.xml
+ mapper-locations: classpath:*Mapper.xml
+ type-aliases-package: ccom.example.bean
