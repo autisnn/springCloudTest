@@ -1,2 +1,16 @@
 ﻿#测试分支
 profile:  profile-test
+
+server:
+ port: 8080
+
+spring:
+ datasource:
+   name: test
+   url: jdbc:mysql://127.0.0.1:3306/mybatiestest(test)
+   username: root
+   password: root
+   driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+ mapper-locations: classpath:*Mapper.xml
+ type-aliases-package: ccom.example.bean
